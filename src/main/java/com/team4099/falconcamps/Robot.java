@@ -15,7 +15,7 @@ public class Robot extends TimedRobot {
     @Override public void robotInit(){
         intake.set(ControlMode.PercentOutput, 0.5);
         shooter.set(0.5);
-        shooterFollower.follow(shooter, true);
+        shooterFollower.follow(shooter, false);
     }
 
     @Override public void autonomousInit(){
@@ -41,4 +41,5 @@ public class Robot extends TimedRobot {
     @Override public void disabledPeriodic(){
 
     }
+
 }
